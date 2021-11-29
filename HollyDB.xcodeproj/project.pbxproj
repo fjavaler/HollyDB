@@ -15,8 +15,8 @@
 		31CDAB612755634300481DB0 /* HollyDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31CDAB352755633C00481DB0 /* HollyDB.xcdatamodeld */; };
 		31CDAB622755634300481DB0 /* HollyDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CDAB372755633C00481DB0 /* HollyDBApp.swift */; };
 		31CDAB632755634300481DB0 /* HollyDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CDAB372755633C00481DB0 /* HollyDBApp.swift */; };
-		31CDAB642755634300481DB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CDAB382755633C00481DB0 /* ContentView.swift */; };
-		31CDAB652755634300481DB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CDAB382755633C00481DB0 /* ContentView.swift */; };
+		31CDAB642755634300481DB0 /* MovieSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CDAB382755633C00481DB0 /* MovieSearchView.swift */; };
+		31CDAB652755634300481DB0 /* MovieSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CDAB382755633C00481DB0 /* MovieSearchView.swift */; };
 		31CDAB662755634300481DB0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CDAB392755633C00481DB0 /* Persistence.swift */; };
 		31CDAB672755634300481DB0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CDAB392755633C00481DB0 /* Persistence.swift */; };
 		31CDAB682755634300481DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31CDAB3A2755634300481DB0 /* Assets.xcassets */; };
@@ -43,7 +43,7 @@
 /* Begin PBXFileReference section */
 		31CDAB362755633C00481DB0 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		31CDAB372755633C00481DB0 /* HollyDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HollyDBApp.swift; sourceTree = "<group>"; };
-		31CDAB382755633C00481DB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		31CDAB382755633C00481DB0 /* MovieSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchView.swift; sourceTree = "<group>"; };
 		31CDAB392755633C00481DB0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		31CDAB3A2755634300481DB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31CDAB3F2755634300481DB0 /* HollyDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HollyDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,10 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				31CDAB372755633C00481DB0 /* HollyDBApp.swift */,
-				31CDAB382755633C00481DB0 /* ContentView.swift */,
+				31CDAB782755635100481DB0 /* Models */,
+				31CDAB792755635800481DB0 /* Views */,
+				31CDAB7A2755636600481DB0 /* ViewModels */,
 				31CDAB392755633C00481DB0 /* Persistence.swift */,
 				31CDAB3A2755634300481DB0 /* Assets.xcassets */,
-				31CDAB352755633C00481DB0 /* HollyDB.xcdatamodeld */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -147,6 +148,29 @@
 				31CDAB5E2755634300481DB0 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		31CDAB782755635100481DB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31CDAB352755633C00481DB0 /* HollyDB.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31CDAB792755635800481DB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31CDAB382755633C00481DB0 /* MovieSearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31CDAB7A2755636600481DB0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +334,7 @@
 				31CDAB622755634300481DB0 /* HollyDBApp.swift in Sources */,
 				31CDAB662755634300481DB0 /* Persistence.swift in Sources */,
 				31CDAB602755634300481DB0 /* HollyDB.xcdatamodeld in Sources */,
-				31CDAB642755634300481DB0 /* ContentView.swift in Sources */,
+				31CDAB642755634300481DB0 /* MovieSearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +345,7 @@
 				31CDAB632755634300481DB0 /* HollyDBApp.swift in Sources */,
 				31CDAB672755634300481DB0 /* Persistence.swift in Sources */,
 				31CDAB612755634300481DB0 /* HollyDB.xcdatamodeld in Sources */,
-				31CDAB652755634300481DB0 /* ContentView.swift in Sources */,
+				31CDAB652755634300481DB0 /* MovieSearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

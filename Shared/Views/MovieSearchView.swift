@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MovieSearchView.swift
 //  Shared
 //
 //  Created by Frederick Javalera on 11/29/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct MovieSearchView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -85,6 +85,6 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        MovieSearchView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
