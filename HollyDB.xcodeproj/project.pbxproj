@@ -21,6 +21,8 @@
 		31CDAB672755634300481DB0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CDAB392755633C00481DB0 /* Persistence.swift */; };
 		31CDAB682755634300481DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31CDAB3A2755634300481DB0 /* Assets.xcassets */; };
 		31CDAB692755634300481DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31CDAB3A2755634300481DB0 /* Assets.xcassets */; };
+		31CDAB7E275565FA00481DB0 /* MovieSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CDAB7D275565FA00481DB0 /* MovieSearchViewModel.swift */; };
+		31CDAB802755663500481DB0 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CDAB7F2755663500481DB0 /* ExampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		31CDAB582755634300481DB0 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31CDAB5C2755634300481DB0 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		31CDAB5E2755634300481DB0 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		31CDAB7D275565FA00481DB0 /* MovieSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewModel.swift; sourceTree = "<group>"; };
+		31CDAB7F2755663500481DB0 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +111,8 @@
 				31CDAB782755635100481DB0 /* Models */,
 				31CDAB792755635800481DB0 /* Views */,
 				31CDAB7A2755636600481DB0 /* ViewModels */,
-				31CDAB392755633C00481DB0 /* Persistence.swift */,
+				31CDAB7B275565A500481DB0 /* Services */,
+				31CDAB7C275565B200481DB0 /* Storage */,
 				31CDAB3A2755634300481DB0 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -162,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				31CDAB382755633C00481DB0 /* MovieSearchView.swift */,
+				31CDAB7F2755663500481DB0 /* ExampleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,8 +175,24 @@
 		31CDAB7A2755636600481DB0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				31CDAB7D275565FA00481DB0 /* MovieSearchViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		31CDAB7B275565A500481DB0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		31CDAB7C275565B200481DB0 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				31CDAB392755633C00481DB0 /* Persistence.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,7 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31CDAB7E275565FA00481DB0 /* MovieSearchViewModel.swift in Sources */,
 				31CDAB622755634300481DB0 /* HollyDBApp.swift in Sources */,
+				31CDAB802755663500481DB0 /* ExampleView.swift in Sources */,
 				31CDAB662755634300481DB0 /* Persistence.swift in Sources */,
 				31CDAB602755634300481DB0 /* HollyDB.xcdatamodeld in Sources */,
 				31CDAB642755634300481DB0 /* MovieSearchView.swift in Sources */,
